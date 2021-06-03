@@ -1,9 +1,11 @@
 language: java
 
-dist: trusty
+*dist: trusty
 
 jdk:
  - openjdk8
  
- before_install:
-- mvn clean
+* before_install:
+*- mvn clean
+
+script: ./mvnw clean install
