@@ -45,7 +45,7 @@
 				<configuration>
 					<appName>maven-test-project-pu</appName>
 					<processTypes>
-						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+						<web>java -Xmx1g -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -jar -Dserver.port=$PORT ${full-artifact-name}</web>
 					</processTypes>
 				</configuration>
 			</plugin>
