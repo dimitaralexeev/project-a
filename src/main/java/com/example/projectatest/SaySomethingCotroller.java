@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SaySomethingCotroller {
 	
-	@GetMapping(path = "/test")
+	@GetMapping(path = "/")
 	public String saySomething() {
 		return "I want to say something!";
 	}
